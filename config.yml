@@ -21,7 +21,7 @@ bookname: book
 # 記述言語。省略した場合はja
 language: ja
 
-## 書名
+# 書名
 # 読みを入れる例 booktitle: {name: "Re:VIEW EPUBサンプル", file-as: "リビューイーパブサンプル"}
 booktitle: Re:VIEWサンプル書籍
 
