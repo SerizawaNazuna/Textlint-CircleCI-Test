@@ -1,0 +1,25 @@
+{
+  "name": "sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "lint": "./node_modules/.bin/textlint *.re",
+    "lint watch": "textlint sample.re --watch",
+    "push": "npm run lint | git push origin HEAD",
+    "epub": "npm run lint && review-epubmaker config.yml"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "textlint": "^11.0.1",
+    "textlint-plugin-review": "^0.3.3",
+    "textlint-rule-max-ten": "^2.0.3",
+    "textlint-rule-prh": "^5.2.0",
+    "webpack": "^4.25.1"
+  }
+}
